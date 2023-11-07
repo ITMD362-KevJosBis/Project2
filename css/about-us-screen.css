@@ -1,0 +1,5 @@
+/*******Layout Styles*******/
+html {
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden
+}

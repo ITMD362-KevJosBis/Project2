@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/meyers_and_normalize-form_reset.css">
-  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="icon" href="image/tab.png" type="image/png">
+    <script src="javascript/site.js" async></script>
     <title>Membership</title>
 </head>
 <body>
-    <div class="page-content">
         <header class="site-header">
             <h1>The International Society for Universal Dialogue</h1>
         </header>
@@ -24,53 +27,56 @@
                 </ul>
             </nav>
         </header>
-        <div class="container">
-            <h1>Contact Us</h1>
-            <form id="emailForm">
-            <div class="input-container">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="input-container">
-                <label for="concern">Your Concern:</label>
-                <textarea id="concern" name="concern" rows="4" required></textarea>
-            </div>
-            <button type="submit">Submit</button>
-        </form>
-        <p id="confirmation"></p>
-
-        <div class="membership-info">
+        <header class="page-header">
             <h2>Membership</h2>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#announcements">ISUD Announcements and Events</a></li>
-                <li><a href="#journal">ISUD Journal</a></li>
-                <li><a href="#membership">Membership</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            
-            <p>Applying for the membership of the Society: Please contact the ISUD Secretary.</p>
-
-            <p>You are also welcome to inform the ISUD Chair, in this cycle, Professor Robert Allinson; his email address is: Robert Allinson &lt;rallinson@soka.edu&gt;</p>
-
-            <p>Your short bio is required.</p>
-
-            <p>There is no entry fee.</p>
-
+        </header>
+		  <div class="page-content">
+        <div class="membership-container">
+            <div class="membership-info">
+                <h2>Application</h2>
+                <p>How to Apply:</p>
+                <ol>
+                    <li>1) Fill out the form below, which contacts the ISUD Secretary</li>
+                    <li>2) You are also welcome to inform the ISUD Chair, in this cycle, Professor Robert Allinson; his email address is: Robert Allinson &lt;rallinson@soka.edu&gt;</li>
+                    <li>3) Once accepted, pay the membership fee below</li>
+                </ol>
+            </div>
+            <div class="container">
+                <h2>Application Form</h2>
+                <form id="emailForm">
+                <div class="input-container">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="John Doe">
+                </div>
+                <div class="input-container">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Johndoe@gmail.com">
+                </div>
+                <div class="input-container">
+                    <label for="concern">Your Concern:</label>
+                    <textarea id="concern" name="concern" rows="4" required placeholder="Your Bio"></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="confirmation"></p>
+        </div>
+		</div>
+        <div class="payment-info">
+            <h2>Payment</h2>
             <p>The annual membership fee is 10 USD (American dollar), or equivalent, per year.</p>
-
             <p>It is requested to pay the membership fee every two years: 20 USD or equivalent.</p>
-
-            <p>We accept the payment through the ISUD website.</p>
-
-            <p>The membership fee may be paid by PayPal. It can also be paid by credit card or bank transfer: for seeing more detail and/or for making payment, please, click <a href="#">DONATE</a></p>
-
+            <p>Please Pay Using the Button Below. We accept:</p>
+            <ul>
+                <li>- PayPal</li>
+                <li>- Credit Card</li>
+                <li>- Bank Transfer</li>
+            </ul>
             <p><strong>THIS LINK IS UNDER CONSTRUCTION YET.</strong></p>
         </div>
+        <!-- Add the "Donate" button at the bottom of the page -->
+        <button class="donate-button">Donate</button>
     </div>
-	    </div>
-	 <footer>
+    <footer>
         <div class="footer-content">
             <p>&copy; 2023 The International Society for Universal Dialogue</p>
         </div>

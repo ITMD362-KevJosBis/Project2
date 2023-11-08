@@ -11,6 +11,9 @@ main{
     margin: auto;
     max-width: 38em; /*684/18=38*/
 }
+section{
+    margin: 1.50em 0 1.50em 0; /*27/18=1.50*/
+}
 h1,
 h2{
     text-align: center;

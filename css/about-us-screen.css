@@ -15,6 +15,12 @@ h1,
 h2{
     text-align: center;
 }
+figure{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0.50em 0; /*9/18=0.50*/
+}
 img{
     border-style: solid;
     border-radius: 5em; /*90/18=5*/

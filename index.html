@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/meyers_and_normalize-form_reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
     <link rel="icon" href="images/ISUD_Logo_color.png" type="image/png">
     <script src="javascript/site.js" async></script>
     <title>Membership</title>
@@ -36,14 +38,21 @@
             <div class="membership-info">
                 <h3>How to Apply:</h3>
                 <ol>
-                    <li>1) Fill out the form below, which contacts the ISUD Secretary</li>
-                    <li>2) You are also welcome to inform the ISUD Chair, in this cycle, Professor Robert Allinson at <a href="mailto:rallinson@soka.edu">rallinson@soka.edu</a> (Please share your bio with him as well.)</li>
+                    <li>1) Fill out the form to contact the ISUD Secretary</li>
+                    <li>2) You are also welcome to inform the ISUD Chair, Professor Robert</li>
                     <li>3) Once admitted to the society, pay the membership fee below</li>
                 </ol>
             </div>
             <div class="container">
                 <h3>Application Form</h3>
                 <form id="emailForm">
+				<div class="input-container">
+                        <label for="sec">To:</label>
+                        <select id="sec" name="sec">
+        <option value="ISUD Secretary">ISUD Secretary</option>
+        <option value="Robert Allinson">Robert Allinson</option>
+    </select>
+                    </div>
                     <div class="input-container">
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="name" required placeholder="John Doe">
@@ -72,14 +81,20 @@
                 <li>- Bank Transfer</li>
             </ul>
             <p><strong>THIS LINK IS UNDER CONSTRUCTION YET.</strong></p>
+			<button class="donate-button">Pay Here</button>
         </div>
-        <button class="donate-button">Pay Here</button>
     </div>
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2023 The International Society for Universal Dialogue</p>
-        </div>
-    </footer>
+  <footer>
+    <div class="footer-content">
+        <p>&copy; 2023 The International Society for Universal Dialogue</p>
+    </div>
+    <div class="social-icons">
+        <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+        <a href="https://www.google.com" target="_blank"><img src="images/google-icon.png" alt="Google Suits"></a>
+        <a href="https://www.facebook.com" target="_blank"><img src="images/facebook-icon.png" alt="Facebook"></a>
+    </div>
+</footer>
+
     <script src="script.js"></script>
 </body>
 </html>

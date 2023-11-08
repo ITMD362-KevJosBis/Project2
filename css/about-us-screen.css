@@ -16,6 +16,7 @@ html {
     overflow-x: hidden;
 }
 main{
+    background-color: rgb(236, 240, 241);
     display:block;
     padding: 1em; /*18/18=1*/
     margin: auto;

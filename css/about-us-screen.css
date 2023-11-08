@@ -11,3 +11,10 @@ body{
     margin: auto;
     max-width: 38em; /*684/18=38*/
 }
+img{
+    border-style: solid;
+    border-radius: 5em; /*90/18=5*/
+    border-width: 0.111em; /*2/18=0.1111*/
+    width: 18%;
+    max-width: 7em; /*126/18=7*/
+}

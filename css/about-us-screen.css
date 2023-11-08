@@ -21,8 +21,11 @@ main{
     margin: auto;
     max-width: 38em; /*684/18=38*/
 }
-section{
+/*section{
     margin: 1.50em 0 1.50em 0; /*27/18=1.50*/
+/*}*/
+h2{
+    margin: 2.222em 0 1em 0; /*40/18=2.2222 AND 18/18=1*/
 }
 h1,
 h2{

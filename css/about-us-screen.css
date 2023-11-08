@@ -1,5 +1,7 @@
 /*******Layout Styles*******/
 html {
+    font-size: 1.125em; /*18/16=1.125*/
+    line-height: 1.278em; /*23/18=1.2777*/
     text-rendering: optimizeLegibility;
     overflow-x: hidden
 }

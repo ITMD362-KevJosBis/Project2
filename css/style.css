@@ -190,6 +190,23 @@ footer {
   background-color: #2b6ca3;
   color: #ffffff;
   font-size: 1rem;
+   position: relative;
+}
+
+.social-icons {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px; /* Adjust margin to control spacing between icons and footer content */
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-left: 10px; /* Adjust the spacing between icons as needed */
+}
+
+.social-icons img {
+    width: 30px; /* Adjust the width of the icons as needed */
 }
 
 .donate-button {
@@ -198,5 +215,5 @@ footer {
   border: none;
   padding: 30px 40px;
   font-size: 1.125em;
-    margin-top: 20px; 
+   margin-top: 20px; 
 }

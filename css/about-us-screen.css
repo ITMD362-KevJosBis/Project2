@@ -3,5 +3,11 @@ html {
     font-size: 1.125em; /*18/16=1.125*/
     line-height: 1.278em; /*23/18=1.2777*/
     text-rendering: optimizeLegibility;
-    overflow-x: hidden
+    overflow-x: hidden;
+}
+body{
+    display:block;
+    padding: 1em; /*18/18=1*/
+    margin: auto;
+    max-width: 38em; /*684/18=38*/
 }

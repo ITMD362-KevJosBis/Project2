@@ -5,7 +5,7 @@ html {
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
 }
-body{
+main{
     display:block;
     padding: 1em; /*18/18=1*/
     margin: auto;

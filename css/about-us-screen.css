@@ -28,3 +28,6 @@ img{
     width: 18%;
     max-width: 7em; /*126/18=7*/
 }
+.director-info{
+    padding-left: 0.50em; /*9/18=0.50*/
+}

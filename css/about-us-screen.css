@@ -1,3 +1,12 @@
+/*******Custom Fonts*******/
+@font-face {
+    font-family: "Monsterrat";
+    src: url(../assets/fonts/montserrat/montserrat-variablefont_wght.ttf) format(TrueType);
+}
+@font-face {
+    font-family: "Sofia Sans";
+    src: url(../assets/fonts/sofia_sans/sofiasans-variablefont_wght.ttf) format(TrueType);
+}
 /*******Layout Styles*******/
 html {
     font-size: 1.125em; /*18/16=1.125*/

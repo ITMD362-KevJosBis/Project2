@@ -9,6 +9,7 @@
 }
 /*******Layout Styles*******/
 html {
+    font-family: "Monsterrat", "Sofia Sans", Times, sans-serif;
     font-size: 1.125em; /*18/16=1.125*/
     line-height: 1.278em; /*23/18=1.2777*/
     text-rendering: optimizeLegibility;

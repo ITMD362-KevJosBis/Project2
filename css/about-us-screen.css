@@ -27,6 +27,7 @@ section{
 h1,
 h2{
     text-align: center;
+    font-weight: bold;
 }
 figure{
     display: flex;

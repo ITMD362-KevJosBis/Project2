@@ -25,6 +25,11 @@ main{
 /*section{
     margin: 1.50em 0 1.50em 0; /*27/18=1.50*/
 /*}*/
+h1{
+    background-color: rgb(43, 108, 163);
+    color: rgb(255, 255, 255);
+    padding: 0.50em;
+}
 h2{
     margin: 2.222em 0 1em 0; /*40/18=2.2222 AND 18/18=1*/
 }

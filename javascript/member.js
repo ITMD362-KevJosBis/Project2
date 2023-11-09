@@ -1,20 +1,24 @@
-const currentPageURL = window.location.href;
+$(document).ready(function() {
+  var currentPageURL = window.location.href;
 
-document.getElementById("emailForm").addEventListener("submit", function (event) {
+  $("#emailForm").on("submit", function(event) {
     event.preventDefault();
 
-    const emailInput = document.getElementById("email");
-    const confirmationText = document.getElementById("confirmation");
+    var emailInput = $("#email");
+    var confirmationText = $("#confirmation");
 
-    if (isValidEmail(emailInput.value)) {
-        confirmationText.textContent = "Thank you! Your email has been submitted.";
-        emailInput.value = "";
+    if (isValidEmail(emailInput.val())) {
+      confirmationText.text("Thank you for your application!");
+      emailInput.val("");
+      $('#name').val("");
+      $('#concern').val("");
     } else {
-        confirmationText.textContent = "Please enter a valid email address.";
+      confirmationText.text("Please enter a valid email address.");
     }
-});
+  });
 
-function isValidEmail(email) {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  function isValidEmail(email) {
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
-}
+  }
+});

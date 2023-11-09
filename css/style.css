@@ -224,6 +224,11 @@ button:hover {
   margin: 10px 0;
 }
 
+/* Page Content - Mobile */
+.page-content {
+  text-align: center;
+}
+
 @media only screen and (min-width: 600px) {
   /* Header and Navigation - Tablet */
   nav ul li {
@@ -246,7 +251,6 @@ button:hover {
 
   /* Page Content - Tablet */
   .page-content {
-    text-align: center;
     max-width: 75%;
     margin: 0 auto;
     padding: 20px;

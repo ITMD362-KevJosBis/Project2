@@ -12,7 +12,6 @@ main{
     display:block;
     padding: 1em; /*18/18=1*/
     margin: auto;
-    max-width: 38em; /*684/18=38*/
 }
 figure{
     display: flex;
@@ -26,19 +25,6 @@ figure img{
     border-width: 0.111em; /*2/18=0.1111*/
     width: 18%;
     max-width: 7em; /*126/18=7*/
-}
-.container-constitution body, 
-.container-constitution h1, 
-.container-constitution h2, 
-.container-constitution h3, 
-.container-constitution p, 
-.container-constitution ul, 
-.container-constitution li {
-    padding: .75em 0;
-}
-.list-navigation{
-    background-color: rgb(43, 108, 163);
-    text-align: center;
 }
 .director-info{
     padding-left: 0.50em; /*9/18=0.50*/
@@ -55,4 +41,10 @@ figure img{
 }
 #section-objectives, #section-constitution{
     margin: 2.222em 0 1em 0; /*40/18=2.222 AND 18/18=1*/
+}
+
+@media only screen and (min-width: 600px) {
+  main {
+    width: 95%;
+  }
 }

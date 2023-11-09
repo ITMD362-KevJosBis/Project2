@@ -1,0 +1,79 @@
+/*******Custom Fonts*******/
+@font-face {
+    font-family: "Monsterrat";
+    src: url(../assets/fonts/montserrat/montserrat-variablefont_wght.ttf) format(TrueType);
+}
+@font-face {
+    font-family: "Sofia Sans";
+    src: url(../assets/fonts/sofia_sans/sofiasans-variablefont_wght.ttf) format(TrueType);
+}
+/*******Layout Styles*******/
+html {
+    font-family: "Monsterrat", "Sofia Sans", Times, sans-serif;
+    font-size: 1.125em; /*18/16=1.125*/
+    line-height: 1.278em; /*23/18=1.2777*/
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+header{
+    background-color: rgb(43, 108, 163);
+    color: rgb(255, 255, 255);
+    padding: 0.50em 0;
+}
+nav a{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-decoration: none;
+}
+main{
+    background-color: rgb(236, 240, 241);
+    display:block;
+    padding: 1em; /*18/18=1*/
+    margin: auto;
+    max-width: 38em; /*684/18=38*/
+}
+h2{
+    margin-bottom: 0.50em; /*9/18=0.50*/
+}
+h1,
+h2{
+    text-align: center;
+    font-weight: bold;
+}
+figure{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0.50em 0; /*9/18=0.50*/
+}
+figure img{
+    border-style: solid;
+    border-radius: 5em; /*90/18=5*/
+    border-width: 0.111em; /*2/18=0.1111*/
+    width: 18%;
+    max-width: 7em; /*126/18=7*/
+}
+.list-navigation{
+    background-color: rgb(43, 108, 163);
+    text-align: center;
+}
+.director-info{
+    padding-left: 0.50em; /*9/18=0.50*/
+}
+.mission-statement{
+    margin: 1em 0 1em 0; /*18/18*/
+}
+.list-objectives{
+    list-style-type: circle;
+    margin: 0 0 0 1.50em; /*27/18=1.50*/
+}
+.list-objectives li{
+    padding: 0.222em 0 0.222em 0; /*4/18=0.2222*/
+}
+#nav-navigation{
+    display: none
+}
+#section-objectives,
+#section-constitution{
+    margin: 2.222em 0 1em 0; /*40/18=2.222 AND 18/18=1*/
+}

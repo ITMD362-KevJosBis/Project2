@@ -9,4 +9,10 @@ $('#hamburger').on("click", function () {
 jQuery(function($) {
   $('html').removeClass('nojs');
   $('html').addClass('hasjs');
+  if ($(window).width() > 600) {
+    $('#hamburger').remove();
+    $('#nav-navigation').css( {
+      "display": "block"
+    });
+  }
 });

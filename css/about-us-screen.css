@@ -53,9 +53,6 @@ figure img{
 .list-objectives li{
     padding: 0.222em 0 0.222em 0; /*4/18=0.2222*/
 }
-#nav-navigation{
-    display: none;
-}
 #section-objectives, #section-constitution{
     margin: 2.222em 0 1em 0; /*40/18=2.222 AND 18/18=1*/
 }

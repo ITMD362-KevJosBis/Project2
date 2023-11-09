@@ -254,7 +254,7 @@ button:hover {
     align-items: center;
   }
 
-  .image-caption img {
+  .page-content .image-caption img {
     width: 400px; 
     height: 300px; 
   }

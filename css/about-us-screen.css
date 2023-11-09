@@ -27,6 +27,9 @@ figure img{
     width: 18%;
     max-width: 7em; /*126/18=7*/
 }
+body, h1, h2, h3, p, ul, li {
+    padding: .75em 0;
+}
 .list-navigation{
     background-color: rgb(43, 108, 163);
     text-align: center;

@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
-    <link rel="icon" href="images/ISUD_Logo_color.png" type="image/png">
-    <script src="javascript/site.js" async></script>
+    <link rel="icon" href="images/ISUD_Logo_color.png" type="image/png"> <!-- Correct the "type" attribute value -->
+    <script src="javascript/script.js" async></script>
     <title>Membership</title>
 </head>
 <body>
@@ -19,69 +19,35 @@
     <header class="navigation-header" id="navigation-header">
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#announcements">ISUD Announcements and Events</a></li>
                 <li><a href="./journal.html">ISUD Journal</a></li>
-                <li><a href="#membership">Membership</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="membership.html">Membership</a></li>
             </ul>
         </nav>
     </header>
     <header class="page-header">
-        <h2>Membership</h2>
+        <h2>Home</h2>
     </header>
    <div class="page-content">
-        <div class="membership-container">
-            <div class="membership-info">
-                <h3>How to Apply:</h3>
-                <ol>
-                    <li>1) Fill out the form to contact the ISUD Secretary</li>
-                    <li>2) You are also welcome to inform the ISUD Chair, Professor Robert</li>
-                    <li>3) Once admitted to the society, pay the membership fee below</li>
-                </ol>
+            <h3>Welcome to our Website!</h3>
+        <div class="image-container">
+            <div class="image-caption">
+                <img src="images/group.png" alt="Image 1">
+                <p>Group Picture</p>
             </div>
-            <div class="container">
-                <h3>Application Form</h3>
-                <form id="emailForm">
-                    <div class="input-container">
-                        <label for="sec">To:</label>
-                        <select id="sec" name="sec">
-                            <option value="ISUD Secretary">ISUD Secretary</option>
-                            <option value="Robert Allinson">Robert Allinson</option>
-                        </select>
-                    </div>
-                    <div class="input-container">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required placeholder="John Doe">
-                    </div>
-                    <div class="input-container">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required placeholder="Johndoe@gmail.com">
-                    </div>
-                    <div class="input-container">
-                        <label for="concern">About You:</label>
-                        <textarea id="concern" name="concern" rows="7" required placeholder="Your Bio"></textarea>
-                    </div>
-                    <button type="submit">Submit</button>
-                </form>
-                <p id="confirmation"></p>
+            <div class="image-caption">
+                <img src="images/congress.png" alt="Image 2">
+                <p>ISUD World Congress</p>
             </div>
-        </div>
-        <div class="payment-info">
-            <h3>Payment</h3>
-            <p>The annual membership fee is 10 USD, or equivalent, per year.</p>
-            <p>It is requested to pay the membership fee every two years: 20 USD or equivalent.</p>
-            <p>Please Pay Using the Button Below. We accept:</p>
-            <ul>
-                <li>- PayPal</li>
-                <li>- Credit Card</li>
-                <li>- Bank Transfer</li>
-            </ul>
-            <p><strong>THIS LINK IS UNDER CONSTRUCTION YET.</strong></p>
-            <button class="donate-button">Pay Here</button>
+            <div class="image-caption">
+                <img src="images/lobby.png" alt="Image 3">
+                <p>Members in lobby</p>
+            </div>
         </div>
     </div>
+
     <footer>
         <div class="footer-content">
             <p>&copy; 2023 The International Society for Universal Dialogue</p>
@@ -92,6 +58,6 @@
             <a href="https://www.facebook.com" target="_blank"><img src="images/facebook-icon.png" alt="Facebook"></a>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="javascript/script.js"></script>
 </body>
 </html>

@@ -41,7 +41,7 @@ figure{
     align-items: center;
     margin: 0.50em 0; /*9/18=0.50*/
 }
-img{
+figure img{
     border-style: solid;
     border-radius: 5em; /*90/18=5*/
     border-width: 0.111em; /*2/18=0.1111*/

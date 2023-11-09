@@ -1,3 +1,4 @@
+//NOTE: For nav bar to appear correctly when switching between mobile and desktop, the page must refresh
 $('#hamburger').on("click", function () {
   var x = $("#nav-navigation");
   if (x.css("display") === "block") {

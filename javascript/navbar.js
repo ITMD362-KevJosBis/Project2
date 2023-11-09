@@ -1,11 +1,11 @@
-function myFunction() {
-  var x = document.getElementById("nav-navigation");
-  if (x.style.display === "block") {
-    x.style.display = "none";
+$('#hamburger').on("click", function () {
+  var x = $("#nav-navigation");
+  if (x.css("display") === "block") {
+    x.css("display", "none");
   } else {
-    x.style.display = "block";
+    x.css("display", "block");
   }
-}
+});
 jQuery(function($) {
   $('html').removeClass('nojs');
   $('html').addClass('hasjs');

@@ -1,3 +1,10 @@
+const currentPageURL = window.location.href;
+
+if (currentPageURL.includes('index.html')) {
+    const navigationHeader = document.getElementById('navigation-header');
+    navigationHeader.classList.add('darker-navigation-header');
+}
+
 document.getElementById("emailForm").addEventListener("submit", function (event) {
     event.preventDefault();
 
@@ -13,7 +20,6 @@ document.getElementById("emailForm").addEventListener("submit", function (event)
 });
 
 function isValidEmail(email) {
-    // Basic email validation using a regular expression
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 }

@@ -36,7 +36,7 @@ nav a{
     text-decoration: none;
 }
 
-/* Body and Typography */
+/* Body and Typography (Minor Third) */
 body, h1, h2, h3, p, ul, li {
   margin: 0;
   padding: 1rem;
@@ -53,16 +53,16 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 1.3em;
+  font-size: 1.44em;
   color: #2b6ca3;
 }
 
 h2 {
-  font-size: 1.3em;
+  font-size: 1.44em;
 }
 
 h3 {
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 
 p {
@@ -289,5 +289,23 @@ button:hover {
   .membership-info, .container, .payment-info {
     padding: 100px 50px;
     margin: 20px 0;
+  }
+
+  @media only screen and (min-width: 992px) {
+    h1 {
+      font-size: 1.728em;
+    }
+
+    h2 {
+      font-size: 1.728em;
+    }
+
+    h3 {
+      font-size: 1.44em;
+    }
+
+    p {
+      font-size: 1.2em;
+    }
   }
 }

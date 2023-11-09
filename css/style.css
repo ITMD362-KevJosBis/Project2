@@ -1,3 +1,15 @@
+/*******Custom Fonts*******/
+@font-face {
+    font-family: "Monsterrat";
+    src: url(../assets/fonts/montserrat/montserrat-variablefont_wght.ttf) format(TrueType);
+}
+@font-face {
+    font-family: "Sofia Sans";
+    src: url(../assets/fonts/sofia_sans/sofiasans-variablefont_wght.ttf) format(TrueType);
+}
+html {
+  font-family: "Monsterrat", "Sofia Sans", Times, sans-serif;
+}
 /* Mobile Navbar */
 .list-navigation{
   background-color: rgb(43, 108, 163);
@@ -32,14 +44,12 @@ body, h1, h2, h3, p, ul, li {
 
 body {
   background-color: #ffffff;
-  font-family: 'Manrope', sans-serif;
   margin: 0;
   padding: 0;
 }
 
 h1, h2, h3 {
   font-weight: bold;
-  font-family: 'Merriweather', serif;
 }
 
 h1 {

@@ -1,11 +1,11 @@
 /*******Custom Fonts*******/
 @font-face {
-    font-family: "Monsterrat";
-    src: url(../assets/fonts/montserrat/montserrat-variablefont_wght.ttf) format(TrueType);
+  font-family: "Monsterrat";
+  src: url(../assets/fonts/montserrat/montserrat-variablefont_wght.ttf) format(TrueType);
 }
 @font-face {
-    font-family: "Sofia Sans";
-    src: url(../assets/fonts/sofia_sans/sofiasans-variablefont_wght.ttf) format(TrueType);
+  font-family: "Sofia Sans";
+  src: url(../assets/fonts/sofia_sans/sofiasans-variablefont_wght.ttf) format(TrueType);
 }
 html {
   font-family: "Monsterrat", "Sofia Sans", Times, sans-serif;
@@ -21,19 +21,19 @@ html {
 }
 
 header.navbar {
-    background-color: rgb(43, 108, 163);
-    color: rgb(255, 255, 255);
-    padding: 0.50em 0;
-    position: fixed;
-    width: 100%;
-    height: 2.5em;
-    top: 0;
+  background-color: rgb(43, 108, 163);
+  color: rgb(255, 255, 255);
+  padding: 0.50em 0;
+  position: fixed;
+  width: 100%;
+  height: 2.5em;
+  top: 0;
 }
 
 nav a{
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-decoration: none;
 }
 
 /* Body and Typography (Minor Third) */

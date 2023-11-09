@@ -27,7 +27,13 @@ figure img{
     width: 18%;
     max-width: 7em; /*126/18=7*/
 }
-body, h1, h2, h3, p, ul, li {
+.container-constitution body, 
+.container-constitution h1, 
+.container-constitution h2, 
+.container-constitution h3, 
+.container-constitution p, 
+.container-constitution ul, 
+.container-constitution li {
     padding: .75em 0;
 }
 .list-navigation{

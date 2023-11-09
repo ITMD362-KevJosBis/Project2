@@ -291,21 +291,21 @@ button:hover {
     margin: 20px 0;
   }
 
-  @media only screen and (min-width: 992px) {
-    h1 {
-      font-size: 1.728em;
-    }
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: 1.728em;
+  }
 
-    h2 {
-      font-size: 1.728em;
-    }
+  h2 {
+    font-size: 1.728em;
+  }
 
-    h3 {
-      font-size: 1.44em;
-    }
+  h3 {
+    font-size: 1.44em;
+  }
 
-    p {
-      font-size: 1.2em;
-    }
+  p {
+    font-size: 1.2em;
+  }
   }
 }

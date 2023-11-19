@@ -29,6 +29,10 @@ figure img{
 .director-info{
   padding-left: 0.50em; /*9/18=0.50*/
 }
+.director-name,
+.director-position {
+  padding: 0;
+}
 .mission-statement{
   margin: 1em 0 1em 0; /*18/18*/
 }

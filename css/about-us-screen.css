@@ -15,6 +15,9 @@ main{
   padding: 1em; /*18/18=1*/
   margin: auto;
 }
+h2{
+  text-align: center;
+}
 figure{
   display: flex;
   flex-wrap: wrap;

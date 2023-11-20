@@ -44,10 +44,11 @@ figure img{
   padding: 0;
 }
 .list-objectives{
-  list-style-type: circle;
   margin: 0 0 0 1.50em; /*27/18=1.50*/
 }
 .list-objectives li{
+  display: list-item;
+  list-style-type: circle;
   padding: 0.222em 0 0.222em 0; /*4/18=0.2222*/
 }
 #section-objectives, #section-constitution{

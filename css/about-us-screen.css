@@ -70,5 +70,13 @@ figure img{
     display: flex;
     flex-wrap: wrap;
   }
+  .director{
+    display: block;
+    text-align: center;
+    margin: 1em auto 0 auto;
+  }
+  .director-info{
+    padding: 0;
+  }
   
 }

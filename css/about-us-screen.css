@@ -57,11 +57,7 @@ figure img{
   margin: 2.222em 0 1em 0; /*40/18=2.222 AND 18/18=1*/
 }
 
-@media only screen and (min-width: 600px) {
-  main {
-    width: 94%;
-    max-width: 50em; /*900/18=50*/
-  }
+@media only screen and (min-width: 31em) { /*496/16=31*/
   figure img{
     width: 60%;
     max-width: 100%;
@@ -78,5 +74,10 @@ figure img{
   .director-info{
     padding: 0;
   }
-  
+}
+@media only screen and (min-width: 600px) {
+  main {
+    width: 94%;
+    max-width: 50em; /*900/18=50*/
+  }
 }

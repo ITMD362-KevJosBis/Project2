@@ -62,4 +62,9 @@ figure img{
     width: 94%;
     max-width: 50em; /*900/18=50*/
   }
+  figure img{
+    width: 60%;
+    max-width: 100%;
+  }
+  
 }

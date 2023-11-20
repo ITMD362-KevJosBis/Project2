@@ -66,5 +66,9 @@ figure img{
     width: 60%;
     max-width: 100%;
   }
+  #board-of-directors{
+    display: flex;
+    flex-wrap: wrap;
+  }
   
 }

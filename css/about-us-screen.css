@@ -19,18 +19,18 @@ h2{
   text-align: center;
   padding: 0;
 }
-figure{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin: 0.50em 0; /*9/18=0.50*/
-}
 figure img{
   border-style: solid;
   border-radius: 5em; /*90/18=5*/
   border-width: 0.111em; /*2/18=0.1111*/
   width: 18%;
   max-width: 7em; /*126/18=7*/
+}
+.director {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0.50em 0; /*9/18=0.50*/
 }
 .director-info{
   padding-left: 0.50em; /*9/18=0.50*/

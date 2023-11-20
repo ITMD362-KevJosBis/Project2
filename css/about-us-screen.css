@@ -40,6 +40,7 @@ figure img{
 }
 .mission-statement{
   margin: 1em 0 1em 0; /*18/18*/
+  padding: 0;
 }
 .list-objectives{
   list-style-type: circle;

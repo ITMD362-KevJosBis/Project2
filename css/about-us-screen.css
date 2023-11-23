@@ -71,7 +71,11 @@ li{
   padding: 0.50em 1em;
   width: 100%;
 }
-li p{
+#article1,
+#article2,
+#article3,
+#article4,
+#article5{
   padding: 1em;
   display: none;
 }

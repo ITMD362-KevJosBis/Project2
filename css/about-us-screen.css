@@ -6,11 +6,6 @@ html {
   text-rendering: optimizeLegibility;
   overflow-x: hidden
 }
-nav a{
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  text-decoration: none;
-}
 main{
   background-color: rgb(236, 240, 241);
   display:block;

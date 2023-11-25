@@ -1,12 +1,13 @@
 /*******Layout Styles*******/
-html {
+
+#html-about-us{
   font-family: "Monsterrat", "Sofia Sans", Times, sans-serif;
   /*font-size: 1.125em; /*18/16=1.125*/
   line-height: 1.375em; /*22/16=1.375*/
   text-rendering: optimizeLegibility;
   overflow-x: hidden
 }
-main{
+#about-us-content{
   background-color: rgb(236, 240, 241);
   display:block;
   padding: 1em; /*16/16=1*/
@@ -17,14 +18,15 @@ h2{
   text-align: center;
   padding: 0;
 }
-figure img{
+.director-photo{
   border-style: solid;
   border-radius: 5em; /*96/16=5*/
   border-width: 0.125em; /*2/16=0.125*/
   width: 18%;
   max-width: 8em; /*128/16=8*/
 }
-ul{
+.list-navigation,
+#container-constitution{
   padding: 0;
 }
 .director {
@@ -79,7 +81,7 @@ li{
 }
 
 @media only screen and (min-width: 31em) { /*496/16=31*/
-  figure img{
+  .director-photo{
     width: 60%;
     max-width: 100%;
   }
@@ -100,7 +102,7 @@ li{
   }
 }
 @media only screen and (min-width: 600px) {
-  main {
+  #about-us-content{
     width: 94%;
     max-width: 50em; /*900/18=50*/
   }

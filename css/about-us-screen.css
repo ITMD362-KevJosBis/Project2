@@ -62,11 +62,15 @@ li{
   padding: 0.50em 1em; /*9/18=0.50*/
   width: 100%;
 }
-#article1,
-#article2,
-#article3,
-#article4,
-#article5{
+#article1-content,
+#article2-content,
+#article3-content,
+#article4-content,
+#article5-content,
+#article6-content,
+#article7-content,
+#article8-content,
+#article9-content{
   padding: 1em; /*16/16*/
   display: none;
 }

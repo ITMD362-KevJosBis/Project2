@@ -29,6 +29,9 @@ figure img{
   width: 18%;
   max-width: 7em; /*126/18=7*/
 }
+ul{
+  padding: 0;
+}
 .director {
   display: flex;
   flex-wrap: wrap;

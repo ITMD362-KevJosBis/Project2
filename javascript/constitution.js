@@ -17,31 +17,31 @@ const onClick = function() {
 
 	// Find which button was clicked
 	if (button === "btn-article1") {
-		status = document.getElementById("article1");
+		status = document.getElementById("article1-content");
 		articleView(status);
 	} else if (button === "btn-article2") {
-		status = document.getElementById("article2");
+		status = document.getElementById("article2-content");
 		articleView(status);
 	} else if (button === "btn-article3") {
-		status = document.getElementById("article3");
+		status = document.getElementById("article3-content");
 		articleView(status);
 	} else if (button === "btn-article4") {
-		status = document.getElementById("article4");
+		status = document.getElementById("article4-content");
 		articleView(status);
 	} else if (button === "btn-article5") {
-		status = document.getElementById("article5");
+		status = document.getElementById("article5-content");
 		articleView(status);
 	} else if (button === "btn-article6") {
-		status = document.getElementById("article6");
+		status = document.getElementById("article6-content");
 		articleView(status);
 	} else if (button === "btn-article7") {
-		status = document.getElementById("article7");
+		status = document.getElementById("article7-content");
 		articleView(status);
 	} else if (button === "btn-article8") {
-		status = document.getElementById("article8");
+		status = document.getElementById("article8-content");
 		articleView(status);
 	} else if (button === "btn-article9") {
-		status = document.getElementById("article9");
+		status = document.getElementById("article9-content");
 		articleView(status);
 	}
 }

@@ -55,6 +55,10 @@ li{
   list-style-type: circle;
   padding: 0.444em 0 0.444em 0; /*8/18=0.4444*/
 }
+.list-navigation,
+#container-constitution{
+  padding: 0;
+}
 .btn-articles{
   background-color: rgb(70, 166, 175);
   text-align: left;
@@ -74,9 +78,20 @@ li{
   padding: 1em; /*16/16*/
   display: none;
 }
-.list-navigation,
-#container-constitution{
+.article-subsections{
+  display: flex;
+}
+.article-subsections p{
   padding: 0;
+}
+.numbers-container{
+  padding: 0 0.75em 0 0; /*12/16=0.50*/
+  max-width: 0.75em;
+}
+.numbers{
+  padding: 0;
+  padding: 0 16px 0 0; /*8/18=0.50*/
+  max-width: 0.75em;
 }
 #section-objectives, #section-constitution{
   margin: 2.25em 0 1em 0; /*36/16=2.25 AND 16/16=1*/

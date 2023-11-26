@@ -85,13 +85,11 @@ li{
   padding: 0;
 }
 .numbers-container{
-  padding: 0 0.75em 0 0; /*12/16=0.50*/
-  max-width: 0.75em;
+  padding: 0 0.90em 0 0;
+  max-width: 0.57em;
 }
 .numbers{
   padding: 0;
-  padding: 0 16px 0 0; /*8/18=0.50*/
-  max-width: 0.75em;
 }
 #section-objectives, #section-constitution{
   margin: 2.25em 0 1em 0; /*36/16=2.25 AND 16/16=1*/

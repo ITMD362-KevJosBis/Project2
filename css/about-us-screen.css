@@ -10,7 +10,7 @@
 #about-us-content{
   background-color: rgb(236, 240, 241);
   display:block;
-  padding: 1.50em 6%; /*24/16=1.50*/
+  padding: 1.50em 1em; /*24/16=1.50 AND 16/16=1*/
   margin: auto;
 }
 h2{

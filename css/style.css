@@ -306,6 +306,7 @@ button:hover {
   }
 
   p {
-    font-size: 1.2em;
+    font-size: 1.20em; /*19.2/16=1.20*/
+    line-height: 1.25em; /*24/19.2=1.25*/
   }
 }

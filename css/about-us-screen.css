@@ -1,5 +1,4 @@
 /*******Layout Styles*******/
-
 #html-about-us{
   font-family: "Monsterrat", "Sofia Sans", Times, sans-serif;
   /*font-size: 1.125em; /*18/16=1.125*/
@@ -13,12 +12,14 @@
   padding: 1.50em 1em; /*24/16=1.50 AND 16/16=1*/
   margin: auto;
 }
-h2{
+.about-us-header2{
   line-height: 1.278em; /*29.4/23=1.2782*/
   text-align: center;
   padding: 0;
 }
-li{
+.list-objectives li,
+#container-constitution li,
+.list-subsections li{
   margin: 0;
   padding: 0;
 }

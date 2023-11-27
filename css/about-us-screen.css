@@ -123,6 +123,6 @@
 @media only screen and (min-width: 600px) {
   #about-us-content{
     width: 94%;
-    max-width: 50em; /*900/18=50*/
+    max-width: 52em; /*832/16=52*/
   }
 }

@@ -120,7 +120,7 @@
     margin: 0 0 0 3em; /*54/18=3*/
   }
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 38em) { /*608/16=38*/
   #about-us-content{
     width: 94%;
     max-width: 52em; /*832/16=52*/

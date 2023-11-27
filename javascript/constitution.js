@@ -16,7 +16,10 @@ const onClick = function() {
 	var button = this.id;
 
 	// Find which button was clicked
-	if (button === "btn-article1") {
+	if (button === "btn-preamble") {
+		status = document.getElementById("preamble-content");
+		articleView(status);
+	} else if (button === "btn-article1") {
 		status = document.getElementById("article1-content");
 		articleView(status);
 	} else if (button === "btn-article2") {
@@ -47,6 +50,7 @@ const onClick = function() {
 }
 
 // These are listeners to detect which button was clicked
+document.getElementById("btn-preamble").onclick = onClick;
 document.getElementById("btn-article1").onclick = onClick;
 document.getElementById("btn-article2").onclick = onClick;
 document.getElementById("btn-article3").onclick = onClick;

@@ -26,7 +26,7 @@ header.navbar {
   padding: 0.50em 0;
   position: fixed;
   width: 100%;
-  height: 2.5em;
+  height:2em;
   top: 0;
 }
 
@@ -319,6 +319,11 @@ button:hover {
   }
 }
 
+
+
+
+
+/* ABOUT US PAGE */
 /*******Layout Styles*******/
 #html-about-us{
   font-family: "Monsterrat", "Sofia Sans", Times, sans-serif;

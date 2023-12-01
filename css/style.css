@@ -228,7 +228,7 @@ button:hover {
 }
 
 .image-caption img {
-  width: 95%;
+  width: 100%;
   object-fit: cover;
   border: 3px solid #fff;
   border-radius: 10px;

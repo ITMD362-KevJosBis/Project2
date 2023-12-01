@@ -250,8 +250,8 @@ button:hover {
 
 @media only screen and (max-width: 599px) {
   .image-caption img {
-    width: 100%; /* Make the images take up the full width of the container */
-    max-width: none; /* Remove the maximum width constraint */
+    width: 100%; 
+    max-width: none; 
   }
 }
 

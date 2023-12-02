@@ -10,6 +10,7 @@
 html {
   font-family: "Monsterrat", "Sofia Sans", Times, sans-serif;
 }
+
 /* Mobile Navbar */
 .list-navigation{
   background-color: rgb(43, 108, 163);
@@ -18,18 +19,16 @@ html {
 
 #nav-navigation{
   display: none;
-    margin-top: 7px; 
 }
 
 header.navbar {
   background-color: rgb(43, 108, 163);
   color: rgb(255, 255, 255);
-  padding: 1em 0;
+  padding: 0.50em 0;
   position: fixed;
   width: 100%;
-  height:2em;
+  height:2.5em;
   top: 0;
-  
 }
 
 nav a{
@@ -42,7 +41,6 @@ nav a{
 body, h1, h2, h3, p, ul, li {
   margin: 0;
   padding: 1rem;
-  font-family: 'Merriweather', 'Georgia', serif;
 }
 
 body {
@@ -100,25 +98,15 @@ footer {
 
 /* Header and Navigation - Mobile */
 header.site-header, header.page-header {
-  font-family: 'Manrope', 'Sofia Sans', Arial, sans-serif;
   font-weight: bold;
   text-align: center;
-  font-size: 1em;
+  font-size: 1.5em;
   padding: 1rem 0;
   line-height: 1.6;
 }
 
 header.site-header {
   margin: 2.5em 0 0 0;
-}
-
-.header-image {
-  margin-top: 20px; 
-}
-
-.header-image img {
-  width: 50px; 
-  height: auto; 
 }
 
 nav ul {
@@ -130,6 +118,7 @@ nav ul li a {
   text-decoration: none;
   transition: color 0.3s;
 }
+
 ul {
   list-style: none;
 }
@@ -160,7 +149,6 @@ a {
   color: #ffffff;
   padding: 10px;
   margin: 20px 0;
-  font-family: 'Merriweather', 'Georgia', serif;
 }
 
 /* Input Fields and Buttons */
@@ -174,7 +162,7 @@ label {
   flex: 1;
   text-align: right;
   margin-right: 10px;
-  font-family: 'Manrope', 'Sofia Sans', Arial, sans-serif;
+  font-family: 'Manrope', 'Sofia Sans', Arial;
   font-size: 1.125em;
 }
 
@@ -228,13 +216,11 @@ button:hover {
 }
 
 .image-caption img {
-  width: 100%;
+  width: 95%;
   object-fit: cover;
   border: 3px solid #fff;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-   max-width: 100%;
-  height: auto;
 }
 
 .image-caption p {
@@ -242,19 +228,6 @@ button:hover {
   font-weight: bold;
   color: #333;
 }
-.page-content .image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@media only screen and (max-width: 599px) {
-  .image-caption img {
-    width: 100%; 
-    max-width: none; 
-  }
-}
-
 
 /* Info Blocks - Mobile */
 .membership-info, .container, .payment-info, .why-join-container {
@@ -266,6 +239,15 @@ button:hover {
 /* Page Content - Mobile */
 .page-content {
   text-align: center;
+}
+
+/* Journal Mobile */
+#html-journal .container a {
+  color: grey;
+}
+
+#html-journal strong {
+  font-weight: bold;
 }
 
 @media only screen and (min-width: 600px) {
@@ -337,6 +319,34 @@ button:hover {
   p {
     font-size: 1.2em;
   }
+
+  /* Journal Desktop */
+  #html-journal main {
+    width: 95%;
+    margin: auto;
+  }
+
+  #html-journal div.container {
+    padding: 1em;
+    box-sizing: border-box;
+    clear: both;
+  }
+
+  #html-journal div.image-container {
+    display: block;
+  }
+
+  #html-journal div.float div.image-container {
+    float: left;
+    width: 25%;
+  }
+
+  #html-journal div.float div.container {
+    float: left;
+    clear: none;
+    width: 75%;
+    height: 465px;
+  }
 }
 
 
@@ -346,9 +356,6 @@ button:hover {
 /* ABOUT US PAGE */
 /*******Layout Styles*******/
 #html-about-us{
-  font-family: "Monsterrat", "Sofia Sans", Times, sans-serif;
-  /*font-size: 1.125em; /*18/16=1.125*/
-  line-height: 1.375em; /*22/16=1.375*/
   text-rendering: optimizeLegibility;
   overflow-x: hidden
 }
@@ -446,6 +453,7 @@ button:hover {
 }
 
 @media only screen and (min-width: 31em) { /*496/16=31*/
+  /* About Us - Tablet */
   #board-of-directors{
     display: flex;
     flex-wrap: wrap;
@@ -470,42 +478,5 @@ button:hover {
   #about-us-content{
     width: 94%;
     max-width: 52em; /*832/16=52*/
-  }
-}
-
-a {
-  color: grey;
-}
-
-strong {
-  font-weight: bold;
-}
-
-@media only screen and (min-width: 600px) {
-  main {
-    width: 95%;
-    margin: auto;
-  }
-
-  div.container {
-    padding: 1em;
-    box-sizing: border-box;
-    clear: both;
-  }
-
-  div.image-container {
-    display: block;
-  }
-
-  div.float div.image-container {
-    float: left;
-    width: 25%;
-  }
-
-  div.float div.container {
-    float: left;
-    clear: none;
-    width: 75%;
-    height: 465px;
   }
 }

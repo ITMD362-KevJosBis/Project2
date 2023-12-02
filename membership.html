@@ -1,50 +1,66 @@
+Your HTML code looks generally well-structured, but I noticed a couple of improvements and suggestions. Here's the corrected version:
+
+```html
 <!DOCTYPE html>
 <html lang="en" class="nojs">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
-  <link rel="stylesheet" href="./css/meyers_and_normalize-form_reset.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/meyers_and_normalize-form_reset.css">
+  <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
-  <link rel="icon" href="./assets/img/isud_logo.png" type="image/png">
+  <link rel="icon" href="assets/img/isud_logo.png" type="image/png">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="./javascript/member.js" async></script>
-  <script src="./javascript/navbar.js" async></script>
+  <script src="javascript/member.js" async></script>
+  <script src="javascript/navbar.js" async></script>
   <title>Membership</title>
 </head>
 <body>
   <header class="navbar">
-    <img id="hamburger" src="./assets/img/hamburger-icon-40.png" alt="hamburger icon">
+    <img id="hamburger" src="assets/img/hamburger-icon-40.png" alt="hamburger icon">
     <nav id="nav-navigation">
       <ul class="list-navigation">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./about-us.html">About Us</a></li>
-        <li><a href="./journal.html">ISUD Journal</a></li>
-        <li><a href="./membership.html">Membership</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="journal.html">ISUD Journal</a></li>
+        <li><a href="membership.html">Membership</a></li>
       </ul>
     </nav>
   </header>
   <header class="site-header">
-    <a href="./index.html"><img src="./assets/img/isud_logo.png" alt="ISUD Logo" class="header-image"></a>
+    <a href="index.html"><img src="assets/img/isud_logo.png" alt="ISUD Logo" class="header-image"></a>
     <h1>The International Society for Universal Dialogue</h1>
   </header>
   <header class="page-header">
     <h2>Membership</h2>
   </header>
   <div class="page-content">
+  <div class="why-join-container">
+      <div class="why-join">
+        <h3>Why Join ISUD?</h3>
+        <p>Becoming a member of The International Society for Universal Dialogue (ISUD) offers a range of benefits:</p>
+        <ul>
+          <li>Connect with like-minded individuals interested in universal dialogue.</li>
+          <li>Access exclusive content from ISUD, including journals and publications.</li>
+          <li>Participate in ISUD events, conferences, and discussions.</li>
+          <li>Contribute to the promotion of universal dialogue globally.</li>
+        </ul>
+        <p>Join us in fostering a community committed to universal dialogue and understanding!</p>
+      </div>
+    </div>
     <div class="membership-container">
       <div class="membership-info">
         <h3>How to Apply:</h3>
         <ol>
-          <li>1) Fill out the form to contact the ISUD Secretary</li>
-          <li>2) You are also welcome to inform the ISUD Chair, Professor Robert</li>
-          <li>3) Once admitted to the society, pay the membership fee below</li>
+          <li>Fill out the form to contact the ISUD Secretary</li>
+          <li>You are also welcome to inform the ISUD Chair, Professor Robert</li>
+          <li>Once admitted to the society, pay the membership fee below</li>
         </ol>
       </div>
       <div class="container">
         <h3>Application Form</h3>
-        <form id="emailForm" autocomplete="on" method="GET" action="#null">
+        <form id="emailForm" autocomplete="on" method="POST" action="#">
           <div class="input-container">
             <label for="sec">To:</label>
             <select id="sec" name="sec">
@@ -64,7 +80,7 @@
             <label for="concern">About You:</label>
             <textarea id="concern" name="concern" rows="7" required placeholder="Your Bio"></textarea>
           </div>
-          <button type="submit">Apply</button>
+          <button type="submit">Apply Now!</button>
         </form>
         <p id="confirmation"></p>
       </div>
@@ -87,10 +103,10 @@
     <div class="footer-content">
       <p>&copy; 2023 The International Society for Universal Dialogue</p>
     </div>
-    <div class="social-icons">
+      <div class="social-icons">
       <a href="https://www.linkedin.com" target="_blank"><img src="assets/img/linkedin-icon.png" alt="LinkedIn"></a>
-      <a href="https://www.google.com" target="_blank"><img src="assets/img/google-icon.png" alt="Google Suits"></a>
-      <a href="https://www.facebook.com" target="_blank"><img src="assets/img/facebook-icon.png" alt="Facebook"></a>
+      <a href="https://www.google.com/search?q=The+International+Society+for+Universal+Dialogue+&sca_esv=586845846&rlz=1C1ONGR_enUS1057US1057&sxsrf=AM9HkKkM9iVTRDBcAPoRVv7cMbdlLTeGtQ%3A1701402758962&ei=hlhpZceoOsqzptQP8_KSuAY&ved=0ahUKEwjHg8WYq-2CAxXKmYkEHXO5BGcQ4dUDCBA&uact=5&oq=The+International+Society+for+Universal+Dialogue+&gs_lp=Egxnd3Mtd2l6LXNlcnAiMVRoZSBJbnRlcm5hdGlvbmFsIFNvY2lldHkgZm9yIFVuaXZlcnNhbCBEaWFsb2d1ZSAyBBAjGCdIsXJQpXBYpXBwAXgAkAEAmAGbAaABmwGqAQMwLjG4AQPIAQD4AQHiAwQYASBBiAYB&sclient=gws-wiz-serp" target="_blank"><img src="assets/img/google-icon.png" alt="Google Suits"></a>
+      <a href="https://www.facebook.com/people/Dialogue-and-Universalism/100063928508323/" target="_blank"><img src="assets/img/facebook-icon.png" alt="Facebook"></a>
     </div>
   </footer>
 </body>

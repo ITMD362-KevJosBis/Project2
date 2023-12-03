@@ -70,7 +70,8 @@ h3 {
 }
 
 p {
-  font-size: 1em;
+  font-size: 1em; /*16/16=1*/
+  line-height: 1.25em; /*20/16=1.25*/
 }
 
 /* Footer and Social Icons */

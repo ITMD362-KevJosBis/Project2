@@ -212,14 +212,17 @@ button:hover {
 }
 
 /* HomePage - Mobile */
-.image-caption {
-  flex: 0 0 calc(33.33% - 20px);
-  margin: 10px;
+.home-image-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.home-image-caption{
+  display: block;
   text-align: center;
-  box-sizing: border-box;
+  margin: 1em auto 0 auto;
 }
 
-.image-caption img {
+.home-image-caption img {
   width: 95%;
   object-fit: cover;
   border: 3px solid #fff;
@@ -227,8 +230,8 @@ button:hover {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
-.image-caption p {
-  margin-top: 10px;
+.home-image-caption p {
+  margin-bottom: 0.50em; /*8/16=0.50*/
   font-weight: bold;
   color: #333;
 }
@@ -246,17 +249,27 @@ button:hover {
 }
 
 /* Journal Mobile */
+.journal-image-caption img{
+  display: block;
+  width: 90%;
+  max-width: 25em; /*400/16=25*/
+  object-fit: cover;/**/
+  border: 3px solid #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+}
 #html-journal .container a {
-  color: grey;
+  color: rgb(42, 148, 150);
 }
 
-#html-journal strong {
+.bold-text {
   font-weight: bold;
 }
 
 /* ABOUT US PAGE */
 /*******Layout Styles*******/
-#html-about-us{
+#html-about-us,#html-journal{
   text-rendering: optimizeLegibility;
   overflow-x: hidden
 }
@@ -382,14 +395,14 @@ button:hover {
     width: 94%;
     max-width: 50em; /*900/18=50*/
   }
-  .image-container {
+  .home-image-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
   }
 
-  .page-content .image-caption img {
+  .page-content .home-image-caption img {
     width: 400px; 
     height: 300px; 
   }
@@ -454,6 +467,12 @@ button:hover {
   #html-about-us #about-us-content{
     width: 95%;
   }
+  /*****Journal Page Styles*****/
+  .float{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -480,11 +499,11 @@ button:hover {
     clear: both;
   }
 
-  #html-journal div.image-container {
+  #html-journal div.journal-image-container {
     display: block;
   }
 
-  #html-journal div.float div.image-container {
+  #html-journal div.float div.journal-image-container {
     float: left;
     width: 25%;
   }

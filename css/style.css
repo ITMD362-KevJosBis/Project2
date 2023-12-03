@@ -231,7 +231,7 @@ button:hover {
 }
 
 .home-image-caption p {
-  margin-top: 10px;
+  margin-bottom: 0.50em; /*8/16=0.50*/
   font-weight: bold;
   color: #333;
 }

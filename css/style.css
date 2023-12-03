@@ -256,7 +256,7 @@ button:hover {
 
 /* ABOUT US PAGE */
 /*******Layout Styles*******/
-#html-about-us{
+#html-about-us,#html-journal{
   text-rendering: optimizeLegibility;
   overflow-x: hidden
 }

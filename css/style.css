@@ -8,7 +8,7 @@
   src: url(../assets/fonts/sofia_sans/sofiasans-variablefont_wght.ttf) format(TrueType);
 }
 html {
-  font-family: "Monsterrat", "Sofia Sans", Times, sans-serif;
+  font-family: "Monsterrat", "Sofia Sans", Times, Monospace;
 }
 
 /* Mobile Navbar */
@@ -40,7 +40,7 @@ nav a{
 /* Body and Typography (Minor Third) */
 body, h1, h2, h3, p, ul, li {
   margin: 0;
-  padding: 1rem;
+  padding: 1em;
 }
 
 body {
@@ -60,6 +60,9 @@ h1 {
 
 h2 {
   font-size: 1.44em;
+  line-height: 1.278;
+  text-align: center;
+  padding: 0;
 }
 
 h3 {
@@ -73,10 +76,10 @@ p {
 /* Footer and Social Icons */
 footer {
   text-align: center;
-  padding: 2rem;
+  padding: 2em;
   background-color: #2b6ca3;
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 1em;
   position: relative;
 }
 
@@ -101,7 +104,7 @@ header.site-header, header.page-header {
   font-weight: bold;
   text-align: center;
   font-size: 1.5em;
-  padding: 1rem 0;
+  padding: 1em 0;
   line-height: 1.6;
 }
 
@@ -317,8 +320,7 @@ button:hover {
   padding: 0.444em 0 0.444em 0; /*8/18=0.4444*/
 }
 
-#html-about-us .list-navigation,
-#html-about-us #container-constitution{
+#html-about-us #container-constitution {
   padding: 0;
 }
 
@@ -445,7 +447,7 @@ button:hover {
   }
 
   #html-about-us #about-us-content{
-    width: 94%;
+    width: 95%;
   }
 }
 

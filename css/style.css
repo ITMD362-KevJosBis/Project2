@@ -263,7 +263,7 @@ button:hover {
   color: grey;
 }
 
-#html-journal strong {
+.bold-text {
   font-weight: bold;
 }
 

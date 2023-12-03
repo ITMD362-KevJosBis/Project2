@@ -70,7 +70,8 @@ h3 {
 }
 
 p {
-  font-size: 1em;
+  font-size: 1em; /*16/16=1*/
+  line-height: 1.25em; /*20/16=1.25*/
 }
 
 /* Footer and Social Icons */
@@ -377,6 +378,10 @@ button:hover {
   }
 
   /* HomePage - Tablet */
+  #about-us-content{
+    width: 94%;
+    max-width: 50em; /*900/18=50*/
+  }
   .image-container {
     display: flex;
     flex-wrap: wrap;
@@ -452,20 +457,15 @@ button:hover {
 }
 
 @media only screen and (min-width: 992px) {
-  h1 {
+  h1, h2 {
     font-size: 1.728em;
   }
-
-  h2 {
-    font-size: 1.728em;
-  }
-
   h3 {
     font-size: 1.44em;
   }
-
   p {
-    font-size: 1.2em;
+    font-size: 1.20em; /*19.2/16=1.20*/
+    line-height: 1.25em; /*24/19.2=1.25*/
   }
 
   /* Journal Desktop */
@@ -493,6 +493,5 @@ button:hover {
     float: left;
     clear: none;
     width: 75%;
-    height: 465px;
   }
 }

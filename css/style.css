@@ -467,6 +467,12 @@ button:hover {
   #html-about-us #about-us-content{
     width: 95%;
   }
+  /*****Journal Page Styles*****/
+  .float{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
 
 @media only screen and (min-width: 992px) {

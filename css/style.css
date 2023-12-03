@@ -8,8 +8,9 @@
   src: url(../assets/fonts/sofia_sans/sofiasans-variablefont_wght.ttf) format(TrueType);
 }
 html {
-  font-family: "Monsterrat", "Sofia Sans", Times, sans-serif;
+  font-family: "Monsterrat", "Sofia Sans", Times, Monospace;
 }
+
 /* Mobile Navbar */
 .list-navigation{
   background-color: rgb(43, 108, 163);
@@ -26,7 +27,7 @@ header.navbar {
   padding: 0.50em 0;
   position: fixed;
   width: 100%;
-  height: 2.5em;
+  height:2.5em;
   top: 0;
 }
 
@@ -39,7 +40,7 @@ nav a{
 /* Body and Typography (Minor Third) */
 body, h1, h2, h3, p, ul, li {
   margin: 0;
-  padding: 1rem;
+  padding: 1em;
 }
 
 body {
@@ -59,6 +60,9 @@ h1 {
 
 h2 {
   font-size: 1.44em;
+  line-height: 1.278;
+  text-align: center;
+  padding: 0;
 }
 
 h3 {
@@ -72,10 +76,10 @@ p {
 /* Footer and Social Icons */
 footer {
   text-align: center;
-  padding: 2rem;
+  padding: 2em;
   background-color: #2b6ca3;
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 1em;
   position: relative;
 }
 
@@ -100,7 +104,7 @@ header.site-header, header.page-header {
   font-weight: bold;
   text-align: center;
   font-size: 1.5em;
-  padding: 1rem 0;
+  padding: 1em 0;
   line-height: 1.6;
 }
 
@@ -117,6 +121,7 @@ nav ul li a {
   text-decoration: none;
   transition: color 0.3s;
 }
+
 ul {
   list-style: none;
 }
@@ -160,7 +165,7 @@ label {
   flex: 1;
   text-align: right;
   margin-right: 10px;
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Manrope', 'Sofia Sans', Arial;
   font-size: 1.125em;
 }
 
@@ -228,7 +233,7 @@ button:hover {
 }
 
 /* Info Blocks - Mobile */
-.membership-info, .container, .payment-info {
+.membership-info, .container, .payment-info, .why-join-container {
   background-color: #ecf0f1;
   padding: 50px 25px;
   margin: 10px 0;
@@ -237,6 +242,131 @@ button:hover {
 /* Page Content - Mobile */
 .page-content {
   text-align: center;
+}
+
+/* Journal Mobile */
+#html-journal .container a {
+  color: grey;
+}
+
+#html-journal strong {
+  font-weight: bold;
+}
+
+/* ABOUT US PAGE */
+/*******Layout Styles*******/
+#html-about-us{
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden
+}
+
+#html-about-us #about-us-content{
+  background-color: rgb(236, 240, 241);
+  display:block;
+  padding: 1.50em 1em; /*24/16=1.50 AND 16/16=1*/
+  margin: auto;
+}
+
+#html-about-us .about-us-header2{
+  line-height: 1.278em; /*29.4/23=1.2782*/
+  text-align: center;
+  padding: 0;
+}
+
+#html-about-us .list-objectives li,
+#html-about-us #container-constitution li,
+#html-about-us .list-subsections li{
+  margin: 0;
+  padding: 0;
+}
+
+#html-about-us .director-photo{
+  border-style: solid;
+  border-radius: 5em; /*96/16=5*/
+  border-width: 0.125em; /*2/16=0.125*/
+  width: 18%;
+  max-width: 8em; /*128/16=8*/
+}
+
+#html-about-us .director {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0.50em 0; /*8/16=0.50*/
+}
+
+#html-about-us .director-info{
+  padding-left: 0.50em; /*8/16=0.50*/
+}
+
+#html-about-us .director-name,
+#html-about-us .director-position {
+  padding: 0;
+}
+
+#html-about-us .mission-statement{
+  margin: 1em 0 1em 0; /*16/16*/
+  padding: 0;
+}
+
+#html-about-us .list-objectives{
+  margin: 0 0 0 1.75em; /*28/16=1.75*/
+}
+
+#html-about-us .list-objectives li{
+  line-height: 1.444em; /*24px/18=1.4444*/
+  display: list-item;
+  list-style-type: circle;
+  padding: 0.444em 0 0.444em 0; /*8/18=0.4444*/
+}
+
+#html-about-us #container-constitution {
+  padding: 0;
+}
+
+#html-about-us .btn-articles{
+  background-color: rgb(70, 166, 175);
+  text-align: left;
+  margin: 0.222em 0; /*4/18=0.2222*/
+  padding: 0.50em 1em; /*9/18=0.50*/
+  width: 100%;
+}
+
+#html-about-us #article1-content,
+#html-about-us #article2-content,
+#html-about-us #article3-content,
+#html-about-us #article4-content,
+#html-about-us #article5-content,
+#html-about-us #article6-content,
+#html-about-us #article7-content,
+#html-about-us #article8-content,
+#html-about-us #article9-content{
+  padding: 1em; /*16/16*/
+  display: none;
+}
+
+#html-about-us .article-subsections{
+  display: flex;
+}
+
+#html-about-us .article-subsections p{
+  font-size: 0.889em; /*16/18=0.8888*/
+  padding: 0;
+  margin: 0.50em 0;
+}
+
+#html-about-us .numbers-container{
+  padding: 0 0.90em 0 0;
+  max-width: 0.57em;
+}
+
+#html-about-us .numbers{
+  padding: 0;
+  margin: 0.50em 0; /*8/16=0.50*/
+}
+
+#html-about-us #section-objectives, #section-constitution{
+  margin: 2.25em 0 1em 0; /*36/16=2.25 AND 16/16=1*/
 }
 
 @media only screen and (min-width: 600px) {
@@ -290,6 +420,35 @@ button:hover {
     padding: 100px 50px;
     margin: 20px 0;
   }
+
+  /* About Us - Tablet */
+  #html-about-us #board-of-directors{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #html-about-us .director-photo{
+    width: 60%;
+    max-width: 100%;
+  }
+
+  #html-about-us .director{
+    display: block;
+    text-align: center;
+    margin: 1em auto 0 auto;
+  }
+
+  #html-about-us .director-info{
+    padding: 0;
+  }
+
+  #html-about-us .list-objectives{
+    margin: 0 0 0 3em; /*54/18=3*/
+  }
+
+  #html-about-us #about-us-content{
+    width: 95%;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -302,5 +461,33 @@ button:hover {
   p {
     font-size: 1.20em; /*19.2/16=1.20*/
     line-height: 1.25em; /*24/19.2=1.25*/
+  }
+
+  /* Journal Desktop */
+  #html-journal main {
+    width: 95%;
+    margin: auto;
+  }
+
+  #html-journal div.container {
+    padding: 1em;
+    box-sizing: border-box;
+    clear: both;
+  }
+
+  #html-journal div.image-container {
+    display: block;
+  }
+
+  #html-journal div.float div.image-container {
+    float: left;
+    width: 25%;
+  }
+
+  #html-journal div.float div.container {
+    float: left;
+    clear: none;
+    width: 75%;
+    height: 465px;
   }
 }

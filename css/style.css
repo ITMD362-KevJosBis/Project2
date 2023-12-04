@@ -237,7 +237,7 @@ button:hover {
 }
 
 /* Info Blocks - Mobile */
-.membership-info, .container, .payment-info, .why-join-container {
+.membership-info, .container, .payment-info, .why-join-container, .rules-info, .rules-info-container {
   background-color: #ecf0f1;
   padding: 50px 25px;
   margin: 10px 0;

@@ -384,7 +384,7 @@ button:hover {
 }
 
 /*MEMBERSHIP PAGE*/
-#sec, #name, #email, #concern, #submit, #follow-up{
+#sec, #name, #email, #concern, #submit{
   width: 70%;
   -moz-box-sizing: border-box; 
   -webkit-box-sizing: border-box; 

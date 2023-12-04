@@ -383,6 +383,14 @@ button:hover {
   margin: 2.25em 0 1em 0; /*36/16=2.25 AND 16/16=1*/
 }
 
+/*MEMBERSHIP PAGE*/
+#sec, #name, #email, #concern, #submit{
+  width: 70%;
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box; 
+}
+
 @media only screen and (min-width: 600px) {
   /* Header and Navigation - Tablet */
   nav ul li {
@@ -434,6 +442,9 @@ button:hover {
   }
 
   /* Info Blocks - Tablet*/
+  #sec, #name, #email, #concern, #submit{
+    width: 80%;
+    }
   .membership-info, .container, .payment-info {
     padding: 100px 50px;
     margin: 20px 0;

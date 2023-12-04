@@ -442,6 +442,9 @@ button:hover {
   }
 
   /* Info Blocks - Tablet*/
+  #sec, #name, #email, #concern, #submit{
+    width: 80%;
+    }
   .membership-info, .container, .payment-info {
     padding: 100px 50px;
     margin: 20px 0;

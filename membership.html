@@ -1,6 +1,3 @@
-Your HTML code looks generally well-structured, but I noticed a couple of improvements and suggestions. Here's the corrected version:
-
-```html
 <!DOCTYPE html>
 <html lang="en" class="nojs">
 <head>
@@ -23,7 +20,7 @@ Your HTML code looks generally well-structured, but I noticed a couple of improv
       <ul class="list-navigation">
         <li><a href="index.html">Home</a></li>
         <li><a href="about-us.html">About Us</a></li>
-        <li><a href="journal.html">ISUD Journal</a></li>
+        <li><a href="journal.html">Journal</a></li>
         <li><a href="membership.html">Membership</a></li>
       </ul>
     </nav>
@@ -50,17 +47,9 @@ Your HTML code looks generally well-structured, but I noticed a couple of improv
       </div>
     </div>
     <div class="membership-container">
-      <div class="membership-info">
-        <h3>How to Apply:</h3>
-        <ol>
-          <li>Fill out the form to contact the ISUD Secretary</li>
-          <li>You are also welcome to inform the ISUD Chair, Professor Robert</li>
-          <li>Once admitted to the society, pay the membership fee below</li>
-        </ol>
-      </div>
       <div class="container">
         <h3>Application Form</h3>
-        <form id="emailForm" autocomplete="on" method="POST" action="#">
+        <form id="emailForm" autocomplete="on" method="POST" action="#null">
           <div class="input-container">
             <label for="sec">To:</label>
             <select id="sec" name="sec">
@@ -80,7 +69,8 @@ Your HTML code looks generally well-structured, but I noticed a couple of improv
             <label for="concern">About You:</label>
             <textarea id="concern" name="concern" rows="7" required placeholder="Your Bio"></textarea>
           </div>
-          <button type="submit">Apply Now!</button>
+          <button type="submit">Join Now!</button>
+          <p id="follow-up">Once admitted to the society, pay the membership fee below</p>
         </form>
         <p id="confirmation"></p>
       </div>
@@ -95,7 +85,6 @@ Your HTML code looks generally well-structured, but I noticed a couple of improv
         <li>- Credit Card</li>
         <li>- Bank Transfer</li>
       </ul>
-      <p><strong>THIS LINK IS UNDER CONSTRUCTION.</strong></p>
       <button class="donate-button">Pay Here</button>
     </div>
   </div>

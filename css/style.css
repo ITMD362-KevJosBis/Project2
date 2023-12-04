@@ -8,8 +8,9 @@
   src: url(../assets/fonts/sofia_sans/sofiasans-variablefont_wght.ttf) format(TrueType);
 }
 html {
-  font-family: "Monsterrat", "Sofia Sans", Times, sans-serif;
+  font-family: "Monsterrat", "Sofia Sans", Times, Monospace;
 }
+
 /* Mobile Navbar */
 .list-navigation{
   background-color: rgb(43, 108, 163);
@@ -18,18 +19,16 @@ html {
 
 #nav-navigation{
   display: none;
-    margin-top: 7px; 
 }
 
 header.navbar {
   background-color: rgb(43, 108, 163);
   color: rgb(255, 255, 255);
-  padding: 1em 0;
+  padding: 0.50em 0;
   position: fixed;
   width: 100%;
-  height:2em;
+  height:2.5em;
   top: 0;
-  
 }
 
 nav a{
@@ -41,8 +40,7 @@ nav a{
 /* Body and Typography (Minor Third) */
 body, h1, h2, h3, p, ul, li {
   margin: 0;
-  padding: 1rem;
-  font-family: 'Merriweather', 'Georgia', serif;
+  padding: 1em;
 }
 
 body {
@@ -62,6 +60,9 @@ h1 {
 
 h2 {
   font-size: 1.44em;
+  line-height: 1.278;
+  text-align: center;
+  padding: 0;
 }
 
 h3 {
@@ -69,16 +70,17 @@ h3 {
 }
 
 p {
-  font-size: 1em;
+  font-size: 1em; /*16/16=1*/
+  line-height: 1.25em; /*20/16=1.25*/
 }
 
 /* Footer and Social Icons */
 footer {
   text-align: center;
-  padding: 2rem;
+  padding: 2em;
   background-color: #2b6ca3;
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 1em;
   position: relative;
 }
 
@@ -100,25 +102,15 @@ footer {
 
 /* Header and Navigation - Mobile */
 header.site-header, header.page-header {
-  font-family: 'Manrope', 'Sofia Sans', Arial, sans-serif;
   font-weight: bold;
   text-align: center;
-  font-size: 1em;
-  padding: 1rem 0;
+  font-size: 1.5em;
+  padding: 1em 0;
   line-height: 1.6;
 }
 
 header.site-header {
   margin: 2.5em 0 0 0;
-}
-
-.header-image {
-  margin-top: 20px; 
-}
-
-.header-image img {
-  width: 50px; 
-  height: auto; 
 }
 
 nav ul {
@@ -130,6 +122,7 @@ nav ul li a {
   text-decoration: none;
   transition: color 0.3s;
 }
+
 ul {
   list-style: none;
 }
@@ -160,7 +153,6 @@ a {
   color: #ffffff;
   padding: 10px;
   margin: 20px 0;
-  font-family: 'Merriweather', 'Georgia', serif;
 }
 
 /* Input Fields and Buttons */
@@ -174,7 +166,7 @@ label {
   flex: 1;
   text-align: right;
   margin-right: 10px;
-  font-family: 'Manrope', 'Sofia Sans', Arial, sans-serif;
+  font-family: 'Manrope', 'Sofia Sans', Arial;
   font-size: 1.125em;
 }
 
@@ -220,41 +212,29 @@ button:hover {
 }
 
 /* HomePage - Mobile */
-.image-caption {
-  flex: 0 0 calc(33.33% - 20px);
-  margin: 10px;
+.home-image-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.home-image-caption{
+  display: block;
   text-align: center;
-  box-sizing: border-box;
+  margin: 1em auto 0 auto;
 }
 
-.image-caption img {
-  width: 100%;
+.home-image-caption img {
+  width: 95%;
   object-fit: cover;
   border: 3px solid #fff;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-   max-width: 100%;
-  height: auto;
 }
 
-.image-caption p {
-  margin-top: 10px;
+.home-image-caption p {
+  margin-bottom: 0.50em; /*8/16=0.50*/
   font-weight: bold;
   color: #333;
 }
-.page-content .image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@media only screen and (max-width: 599px) {
-  .image-caption img {
-    width: 100%; 
-    max-width: none; 
-  }
-}
-
 
 /* Info Blocks - Mobile */
 .membership-info, .container, .payment-info, .why-join-container {
@@ -268,6 +248,149 @@ button:hover {
   text-align: center;
 }
 
+/* Journal Mobile */
+.journal-image-caption img{
+  display: block;
+  width: 90%;
+  max-width: 25em; /*400/16=25*/
+  object-fit: cover;/**/
+  border: 3px solid #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+}
+#html-journal .container a {
+  color: rgb(42, 148, 150);
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+/* ABOUT US PAGE */
+/*******Layout Styles*******/
+#html-about-us,#html-journal{
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden
+}
+
+#html-about-us #about-us-content{
+  background-color: rgb(236, 240, 241);
+  display:block;
+  padding: 1.50em 1em; /*24/16=1.50 AND 16/16=1*/
+  margin: auto;
+}
+
+#html-about-us .about-us-header2{
+  line-height: 1.278em; /*29.4/23=1.2782*/
+  text-align: center;
+  padding: 0;
+}
+
+#html-about-us .list-objectives li,
+#html-about-us #container-constitution li,
+#html-about-us .list-subsections li{
+  margin: 0;
+  padding: 0;
+}
+
+#html-about-us .director-photo{
+  border-style: solid;
+  border-radius: 5em; /*96/16=5*/
+  border-width: 0.125em; /*2/16=0.125*/
+  width: 18%;
+  max-width: 8em; /*128/16=8*/
+}
+
+#html-about-us .director {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0.50em 0; /*8/16=0.50*/
+}
+
+#html-about-us .director-info{
+  padding-left: 0.50em; /*8/16=0.50*/
+}
+
+#html-about-us .director-name,
+#html-about-us .director-position {
+  padding: 0;
+}
+
+#html-about-us .mission-statement{
+  margin: 1em 0 1em 0; /*16/16*/
+  padding: 0;
+}
+
+#html-about-us .list-objectives{
+  margin: 0 0 0 1.75em; /*28/16=1.75*/
+}
+
+#html-about-us .list-objectives li{
+  line-height: 1.444em; /*24px/18=1.4444*/
+  display: list-item;
+  list-style-type: circle;
+  padding: 0.444em 0 0.444em 0; /*8/18=0.4444*/
+}
+
+#html-about-us #container-constitution {
+  padding: 0;
+}
+
+#html-about-us .btn-articles{
+  background-color: rgb(70, 166, 175);
+  text-align: left;
+  margin: 0.222em 0; /*4/18=0.2222*/
+  padding: 0.50em 1em; /*9/18=0.50*/
+  width: 100%;
+}
+
+#html-about-us #article1-content,
+#html-about-us #article2-content,
+#html-about-us #article3-content,
+#html-about-us #article4-content,
+#html-about-us #article5-content,
+#html-about-us #article6-content,
+#html-about-us #article7-content,
+#html-about-us #article8-content,
+#html-about-us #article9-content{
+  padding: 1em; /*16/16*/
+  display: none;
+}
+
+#html-about-us .article-subsections{
+  display: flex;
+}
+
+#html-about-us .article-subsections p{
+  font-size: 0.889em; /*16/18=0.8888*/
+  padding: 0;
+  margin: 0.50em 0;
+}
+
+#html-about-us .numbers-container{
+  padding: 0 0.90em 0 0;
+  max-width: 0.57em;
+}
+
+#html-about-us .numbers{
+  padding: 0;
+  margin: 0.50em 0; /*8/16=0.50*/
+}
+
+#html-about-us #section-objectives, #section-constitution{
+  margin: 2.25em 0 1em 0; /*36/16=2.25 AND 16/16=1*/
+}
+
+/*MEMBERSHIP PAGE*/
+#sec, #name, #email, #concern, #submit{
+  width: 70%;
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box; 
+}
+
 @media only screen and (min-width: 600px) {
   /* Header and Navigation - Tablet */
   nav ul li {
@@ -276,14 +399,18 @@ button:hover {
   }
 
   /* HomePage - Tablet */
-  .image-container {
+  #about-us-content{
+    width: 94%;
+    max-width: 50em; /*900/18=50*/
+  }
+  .home-image-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
   }
 
-  .page-content .image-caption img {
+  .page-content .home-image-caption img {
     width: 400px; 
     height: 300px; 
   }
@@ -315,197 +442,86 @@ button:hover {
   }
 
   /* Info Blocks - Tablet*/
+  #sec, #name, #email, #concern, #submit{
+    width: 80%;
+    }
   .membership-info, .container, .payment-info {
     padding: 100px 50px;
     margin: 20px 0;
   }
-}
 
-@media only screen and (min-width: 992px) {
-  h1 {
-    font-size: 1.728em;
-  }
-
-  h2 {
-    font-size: 1.728em;
-  }
-
-  h3 {
-    font-size: 1.44em;
-  }
-
-  p {
-    font-size: 1.2em;
-  }
-}
-
-
-
-
-
-/* ABOUT US PAGE */
-/*******Layout Styles*******/
-#html-about-us{
-  font-family: "Monsterrat", "Sofia Sans", Times, sans-serif;
-  /*font-size: 1.125em; /*18/16=1.125*/
-  line-height: 1.375em; /*22/16=1.375*/
-  text-rendering: optimizeLegibility;
-  overflow-x: hidden
-}
-#about-us-content{
-  background-color: rgb(236, 240, 241);
-  display:block;
-  padding: 1.50em 1em; /*24/16=1.50 AND 16/16=1*/
-  margin: auto;
-}
-.about-us-header2{
-  line-height: 1.278em; /*29.4/23=1.2782*/
-  text-align: center;
-  padding: 0;
-}
-.list-objectives li,
-#container-constitution li,
-.list-subsections li{
-  margin: 0;
-  padding: 0;
-}
-.director-photo{
-  border-style: solid;
-  border-radius: 5em; /*96/16=5*/
-  border-width: 0.125em; /*2/16=0.125*/
-  width: 18%;
-  max-width: 8em; /*128/16=8*/
-}
-.director {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin: 0.50em 0; /*8/16=0.50*/
-}
-.director-info{
-  padding-left: 0.50em; /*8/16=0.50*/
-}
-.director-name,
-.director-position {
-  padding: 0;
-}
-.mission-statement{
-  margin: 1em 0 1em 0; /*16/16*/
-  padding: 0;
-}
-.list-objectives{
-  margin: 0 0 0 1.75em; /*28/16=1.75*/
-}
-.list-objectives li{
-  line-height: 1.444em; /*24px/18=1.4444*/
-  display: list-item;
-  list-style-type: circle;
-  padding: 0.444em 0 0.444em 0; /*8/18=0.4444*/
-}
-.list-navigation,
-#container-constitution{
-  padding: 0;
-}
-.btn-articles{
-  background-color: rgb(70, 166, 175);
-  text-align: left;
-  margin: 0.222em 0; /*4/18=0.2222*/
-  padding: 0.50em 1em; /*9/18=0.50*/
-  width: 100%;
-}
-#article1-content,
-#article2-content,
-#article3-content,
-#article4-content,
-#article5-content,
-#article6-content,
-#article7-content,
-#article8-content,
-#article9-content{
-  padding: 1em; /*16/16*/
-  display: none;
-}
-.article-subsections{
-  display: flex;
-}
-.article-subsections p{
-  font-size: 0.889em; /*16/18=0.8888*/
-  padding: 0;
-  margin: 0.50em 0;
-}
-.numbers-container{
-  padding: 0 0.90em 0 0;
-  max-width: 0.57em;
-}
-.numbers{
-  padding: 0;
-  margin: 0.50em 0; /*8/16=0.50*/
-}
-#section-objectives, #section-constitution{
-  margin: 2.25em 0 1em 0; /*36/16=2.25 AND 16/16=1*/
-}
-
-@media only screen and (min-width: 31em) { /*496/16=31*/
-  #board-of-directors{
+  /* About Us - Tablet */
+  #html-about-us #board-of-directors{
     display: flex;
     flex-wrap: wrap;
   }
-  .director-photo{
+
+  #html-about-us .director-photo{
     width: 60%;
     max-width: 100%;
   }
-  .director{
+
+  #html-about-us .director{
     display: block;
     text-align: center;
     margin: 1em auto 0 auto;
   }
-  .director-info{
+
+  #html-about-us .director-info{
     padding: 0;
   }
-  .list-objectives{
+
+  #html-about-us .list-objectives{
     margin: 0 0 0 3em; /*54/18=3*/
   }
-}
-@media only screen and (min-width: 38em) { /*608/16=38*/
-  #about-us-content{
-    width: 94%;
-    max-width: 52em; /*832/16=52*/
+
+  #html-about-us #about-us-content{
+    width: 95%;
+  }
+  /*****Journal Page Styles*****/
+  .float{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
   }
 }
 
-a {
-  color: grey;
-}
+@media only screen and (min-width: 992px) {
+  h1, h2 {
+    font-size: 1.728em;
+  }
+  h3 {
+    font-size: 1.44em;
+  }
+  p {
+    font-size: 1.20em; /*19.2/16=1.20*/
+    line-height: 1.25em; /*24/19.2=1.25*/
+  }
 
-strong {
-  font-weight: bold;
-}
-
-@media only screen and (min-width: 600px) {
-  main {
+  /* Journal Desktop */
+  #html-journal main {
     width: 95%;
     margin: auto;
   }
 
-  div.container {
+  #html-journal div.container {
     padding: 1em;
     box-sizing: border-box;
     clear: both;
   }
 
-  div.image-container {
+  #html-journal div.journal-image-container {
     display: block;
   }
 
-  div.float div.image-container {
+  #html-journal div.float div.journal-image-container {
     float: left;
     width: 25%;
   }
 
-  div.float div.container {
+  #html-journal div.float div.container {
     float: left;
     clear: none;
     width: 75%;
-    height: 465px;
   }
 }

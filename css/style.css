@@ -391,7 +391,7 @@ button:hover {
   box-sizing: border-box; 
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 37.5em) { /*600/16=37.5*/
   /* Header and Navigation - Tablet */
   nav ul li {
     display: inline;
@@ -486,7 +486,7 @@ button:hover {
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 62em) { /*992/16=62*/
   h1, h2 {
     font-size: 1.728em;
   }
